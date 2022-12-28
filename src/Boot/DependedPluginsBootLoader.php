@@ -21,7 +21,7 @@ use Micro\Kernel\App\AppKernelInterface;
 /**
  * @author Stanislau Komar <head.trackingsoft@gmail.com>
  */
-readonly class PluginDependedPluginsBootLoader implements PluginBootLoaderInterface
+readonly class DependedPluginsBootLoader implements PluginBootLoaderInterface
 {
     /**
      * @param AppKernelInterface $kernel
