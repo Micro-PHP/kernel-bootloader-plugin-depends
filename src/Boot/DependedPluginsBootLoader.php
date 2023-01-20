@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-/**
- * This file is part of the Micro framework package.
+/*
+ *  This file is part of the Micro framework package.
  *
- * (c) Stanislau Komar <head.trackingsoft@gmail.com>
+ *  (c) Stanislau Komar <kost@micro-php.net>
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ *  For the full copyright and license information, please view the LICENSE
+ *  file that was distributed with this source code.
  */
 
 namespace Micro\Framework\Kernel\Boot;
@@ -16,20 +16,15 @@ namespace Micro\Framework\Kernel\Boot;
 use Micro\Framework\Kernel\KernelInterface;
 use Micro\Framework\Kernel\Plugin\PluginBootLoaderInterface;
 use Micro\Framework\Kernel\Plugin\PluginDependedInterface;
-use Micro\Kernel\App\AppKernelInterface;
 
 /**
- * @author Stanislau Komar <head.trackingsoft@gmail.com>
+ * @author Stanislau Komar <kost@micro-php.net>
  */
 readonly class DependedPluginsBootLoader implements PluginBootLoaderInterface
 {
-    /**
-     * @param AppKernelInterface $kernel
-     */
     public function __construct(
         private KernelInterface $kernel
-    )
-    {
+    ) {
     }
 
     /**
@@ -42,7 +37,7 @@ readonly class DependedPluginsBootLoader implements PluginBootLoaderInterface
         }
 
         $dependedPlugins = $applicationPlugin->getDependedPlugins();
-        if(!$dependedPlugins) {
+        if (!$dependedPlugins) {
             return;
         }
 
