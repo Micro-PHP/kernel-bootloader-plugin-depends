@@ -11,11 +11,11 @@ declare(strict_types=1);
  *  file that was distributed with this source code.
  */
 
-namespace Micro\Framework\Kernel\Boot;
+namespace Micro\Framework\BootPluginDependent\Boot;
 
 use Micro\Framework\Kernel\KernelInterface;
 use Micro\Framework\Kernel\Plugin\PluginBootLoaderInterface;
-use Micro\Framework\Kernel\Plugin\PluginDependedInterface;
+use Micro\Framework\BootPluginDependent\Plugin\PluginDependedInterface;
 
 /**
  * @author Stanislau Komar <kost@micro-php.net>

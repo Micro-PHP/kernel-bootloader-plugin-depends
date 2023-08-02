@@ -11,14 +11,14 @@ declare(strict_types=1);
  *  file that was distributed with this source code.
  */
 
-namespace Micro\Framework\Kernel\Test\Unit\Boot;
+namespace Micro\Framework\BootPluginDependent\Tests\Unit\Boot;
 
-use Micro\Component\DependencyInjection\Container;
-use Micro\Framework\Kernel\Boot\DependedPluginsBootLoader;
+use Micro\Framework\DependencyInjection\Container;
+use Micro\Framework\BootPluginDependent\Boot\DependedPluginsBootLoader;
 use Micro\Framework\Kernel\Kernel;
 use Micro\Framework\Kernel\KernelInterface;
-use Micro\Framework\Kernel\Plugin\PluginDependedInterface;
-use Micro\Framework\Kernel\Test\Unit\PluginHasDepends;
+use Micro\Framework\BootPluginDependent\Plugin\PluginDependedInterface;
+use Micro\Framework\BootPluginDependent\Tests\Unit\PluginHasDepends;
 use PHPUnit\Framework\TestCase;
 
 class DependedPluginsBootLoaderTest extends TestCase

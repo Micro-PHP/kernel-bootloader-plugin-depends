@@ -11,9 +11,9 @@ declare(strict_types=1);
  *  file that was distributed with this source code.
  */
 
-namespace Micro\Framework\Kernel\Test\Unit;
+namespace Micro\Framework\BootPluginDependent\Tests\Unit;
 
-use Micro\Framework\Kernel\Plugin\PluginDependedInterface;
+use Micro\Framework\BootPluginDependent\Plugin\PluginDependedInterface;
 
 /**
  * @author Stanislau Komar <head.trackingsoft@gmail.com>

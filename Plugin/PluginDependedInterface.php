@@ -11,11 +11,17 @@ declare(strict_types=1);
  *  file that was distributed with this source code.
  */
 
-namespace Micro\Framework\Kernel\Test\Unit;
+namespace Micro\Framework\BootPluginDependent\Plugin;
 
 /**
  * @author Stanislau Komar <head.trackingsoft@gmail.com>
  */
-class EmptyPlugin
+interface PluginDependedInterface
 {
+    /**
+     * Returns a list of plugins that should be enabled in your application.
+     *
+     * @return iterable<class-string>
+     */
+    public function getDependedPlugins(): iterable;
 }

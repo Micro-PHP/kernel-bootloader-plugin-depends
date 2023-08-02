@@ -11,20 +11,11 @@ declare(strict_types=1);
  *  file that was distributed with this source code.
  */
 
-namespace Micro\Framework\Kernel\Test\Unit;
-
-use Micro\Framework\Kernel\Plugin\PluginDependedInterface;
+namespace Micro\Framework\BootPluginDependent\Tests\Unit;
 
 /**
  * @author Stanislau Komar <head.trackingsoft@gmail.com>
  */
-class PluginHasDepends implements PluginDependedInterface
+class EmptyPlugin
 {
-    public function getDependedPlugins(): iterable
-    {
-        return [
-            EmptyPlugin::class,
-            PluginHasEmptyDepends::class,
-        ];
-    }
 }
