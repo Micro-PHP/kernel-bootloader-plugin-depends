@@ -2,7 +2,7 @@
     "name": "micro/kernel-boot-plugin-depended",
     "description": "Micro Framework: Kernel Boot loader - component to provide dependencies",
     "license": "MIT",
-    "type": "micro-component",
+    "type": "library",
     "authors": [
         {
             "name": "Stanislau Komar",
@@ -10,11 +10,10 @@
         }
     ],
     "require": {
+        "php": "^8.2",
         "micro/kernel": "^2.0"
     },
-    "require-dev": {
-        "ergebnis/composer-normalize": "^2.29"
-    },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Micro\\Framework\\BootPluginDependent\\": "/"
@@ -24,10 +23,6 @@
         ]
     },
     "config": {
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true
-        },
         "sort-packages": true
-    },
-    "minimum-stability": "dev"
+    }
 }
