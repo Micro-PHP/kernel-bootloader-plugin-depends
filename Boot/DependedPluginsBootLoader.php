@@ -30,13 +30,13 @@ readonly class DependedPluginsBootLoader implements PluginBootLoaderInterface
     /**
      * {@inheritDoc}
      */
-    public function boot(object $applicationPlugin): void
+    public function boot(object $plugin): void
     {
-        if (!($applicationPlugin instanceof PluginDependedInterface)) {
+        if (!($plugin instanceof PluginDependedInterface)) {
             return;
         }
 
-        $dependedPlugins = $applicationPlugin->getDependedPlugins();
+        $dependedPlugins = $plugin->getDependedPlugins();
         if (!$dependedPlugins) {
             return;
         }
